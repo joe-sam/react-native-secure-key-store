@@ -14,7 +14,6 @@ buildscript {
             // JCenter is going read-only repository indefinitely
             // Gradle is discouraging jcenter to avoid to avoid build issues - pipeline
             // ref: https://blog.gradle.org/jcenter-shutdown
-            jcenter()
         }
 
         dependencies {
@@ -43,10 +42,9 @@ android {
 repositories {
     google()
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation "androidx.security:security-crypto:1.0.0-rc03"
+    implementation "androidx.security:security-crypto:1.1.0"
 }
